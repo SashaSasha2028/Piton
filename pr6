@@ -1,0 +1,14 @@
+Практическая работа 6. Вариант 10
+
+def capitalize_words(sentence):
+    words = sentence.split()
+    capitalized_words = []
+    for word in words:
+        if len(word) > 0: 
+            capitalized_word = word[0].upper() + word[1:].lower()
+            capitalized_words.append(capitalized_word)
+    return ' '.join(capitalized_words)
+
+input_sentence = input("Введите строку-предложение на английском языке: ")
+result = capitalize_words(input_sentence)
+print("Преобразованная строка:", result)
