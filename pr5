@@ -1,0 +1,15 @@
+Практическая номер 5. Вариант 3, так как варианта 10 нет. :(
+
+def Fun (N):
+    power = 0
+    value = 1 
+
+    while value <= N:
+        power += 1
+        value *= 2  
+
+    return power - 1, value // 2  
+
+N = int(input("Введите натуральное число N: "))
+exponent, power_of_two = Fun(N)
+print(f"Наибольшая целая степень двойки: 2^{exponent} = {power_of_two
